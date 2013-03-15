@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/">
+<wicket:extend>
+	<h1>Media search paths</h1>
+	
+	<hr />
+		<a wicket:id="updateLink">Update music database</a>
+	<hr />
+
+	<table>
+		<wicket:container wicket:id="paths">
+			<tr>
+				<td><span wicket:id="filename" /></td>
+				<td><a wicket:id="deleteLink">Delete</a></td>
+			</tr>
+		</wicket:container>
+	</table>
+
+	<h2>Add new path</h2>
+	
+	<form wicket:id="addForm">
+		<label for="path">Path:</label> <input wicket:id="path" id="path" style="width: 300px" />
+		<input type="submit" value="Submit" />
+	</form>
+
+</wicket:extend>
+</html>
